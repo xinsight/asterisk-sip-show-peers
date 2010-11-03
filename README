@@ -1,0 +1,21 @@
+
+sip-show-peers
+
+A useful command for monitoring asterisk SIP connections is "sip show peers". This
+binary runs that command as root (or whatever process asterisk is running under) so
+that any user can easily see the SIP status. (I find this useful as part of some
+scripts that monitor the health of the server.)
+
+An example of the output:
+
+Name/username              Host            Dyn Nat ACL Port     Status               
+iphone/iphone              (Unspecified)    D   N      0        UNKNOWN              
+aastra1/aastra1            192.168.10.5     D   N      1025     OK (211 ms)   
+aastra2/aastra2            192.168.10.5     D   N      1025     Unmonitored           
+
+More info:
+
+  http://www.pbxer.com/run-common-asterisk-commands-as-a-normal-user-account/
+
+- jason
+
